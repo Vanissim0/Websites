@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+    <title>Find your birthday</title>
+</head>
+<body>
+    <div class="manual">
+        <h2>Please write your date in format: <br> <br> DAY &nbsp; MONTH &nbsp; YEAR</h2>
+    </div>
+    <div class="input">
+        <input type="text" id="text" name="text" value="" placeholder="type here..." autocomplete="off">
+    </div>
+    <div class="button">
+        <a class="btn" id="button" onclick="findYourBirthday()">OK</a>
+    </div>
+    <div>
+        <h2 id="output"><div id="output"></div></h2>
+    </div>
+    <div>
+        <!-- <h5>by Vanissimo</h5> -->
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
