@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #00bfff;
+    --background-color: #f0f8ff;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--background-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    align-content: center;
+}
+
+.manual {
+    padding-top: 5vh;
+    text-align: center;
+    color: var(--main-color);
+}
+
+a {
+    margin-top: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    padding: 15px 30px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+a:hover {
+    cursor: pointer;
+    color: var(--background-color);
+    background: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color), 0 0 40px var(--main-color), 0 0 80px var(--main-color);
+}
+
+input {
+    margin-top: 100px;
+    border: var(--background-color);
+    outline: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    color: var(--main-color);
+    font-size: 44px;
+    width: 220px;
+}
+
+#output {
+    text-align: center;
+    color: var(--main-color);
+    padding-top: 50px;
+    /* padding-bottom: 12vh ; */
+}
+
+h2 {
+    font-weight: 500;
+}
+
+td {
+    color: antiquewhite;
+}
+
+h5 {
+    color: #b6a1cc;
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        display: block;
+         font-size: 18px;
+        font-size: 1.25rem;
+    }
+}
