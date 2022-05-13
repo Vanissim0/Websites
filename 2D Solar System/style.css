@@ -5,11 +5,12 @@
 }
 body {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     min-height: 100vh;
     background: #000c1f;
 }
+
 .loader {
     /* position: relative; */
     width: 800px;
@@ -25,7 +26,16 @@ body {
     position: absolute;
     width: 100px;
     height: 100px;
-    border: 2px solid #f8f4ff;
+    border: 1px solid #f8f4ff;
+    border-radius: 50%;
+    animation: animate 2s linear infinite;
+}
+
+.circle1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #f8f4ff;
     border-radius: 50%;
     animation: animate 2s linear infinite;
 }
@@ -95,4 +105,30 @@ body {
     width: 30px;
     height: 30px;
     top: -14px;
+}
+
+.tables {
+    width: 80vh;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    position: absolute;
+    right: 0;
+    position:fixed; 
+    /* justify-content:space-between; */
+    align-items:flex-start; 
+    overflow: visible;
+    
+    float:right;
+}
+.table {
+    margin-bottom: 8.5vh;
+    cursor: pointer;
+}
+.light {
+    border: 3px solid #ffff00;   
+}
+
+.bigSun {
+    border: 18px solid #ffff00;
 }
