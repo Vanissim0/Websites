@@ -1,0 +1,30 @@
+h1 {
+    font-family: Roboto, sans-serif;
+    transition: 1s ease-out;
+    line-height: 1;
+    margin: 0;
+    border-left: 3px hotpink solid;
+    width: max-content;
+    margin-top: 100px;
+    &.clicked {
+      padding-left: 10px;
+    }
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .writing-mode {
+    writing-mode: initial;
+    &.clicked {
+     writing-mode: vertical-lr;  
+    }  
+  }
+  .transform {
+    transform: rotate(0);
+    transform-origin: center;
+    &.clicked {
+      transform: rotate(95deg);
+    }  
+  }

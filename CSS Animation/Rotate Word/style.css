@@ -1,0 +1,43 @@
+h1 {
+  font-family: Roboto, sans-serif;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  line-height: 1;
+  margin: 0;
+  border-left: 3px hotpink solid;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 100px;
+}
+h1.clicked {
+  padding-left: 10px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.writing-mode {
+  -webkit-writing-mode: initial;
+      -ms-writing-mode: initial;
+          writing-mode: initial;
+}
+.writing-mode.clicked {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+.transform {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+.transform.clicked {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
